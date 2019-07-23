@@ -10,6 +10,7 @@ public class LoginPOM {
 	
 	public LoginPOM(WebDriver driver) {
 		this.driver = driver; 
+		
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -24,7 +25,9 @@ public class LoginPOM {
 	
 	public void sendUserName(String userName) {
 		this.userName.clear();
-		this.userName.sendKeys(userName);
+		
+		
+		
 	}
 	
 	public void sendPassword(String password) {
